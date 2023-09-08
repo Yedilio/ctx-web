@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Yedilio/ctx-web/static/css/main.ed03c9dc.css",
-    "main.js": "/Yedilio/ctx-web/static/js/main.43f75419.js",
-    "static/media/user.jpg": "/Yedilio/ctx-web/static/media/user.ed3f4cb9d4b48918d668.jpg",
-    "static/media/ctx-logo.jpg": "/Yedilio/ctx-web/static/media/ctx-logo.be14e8f9aab46541142b.jpg",
-    "index.html": "/Yedilio/ctx-web/index.html",
-    "main.ed03c9dc.css.map": "/Yedilio/ctx-web/static/css/main.ed03c9dc.css.map",
-    "main.43f75419.js.map": "/Yedilio/ctx-web/static/js/main.43f75419.js.map"
+    "main.css": "/ctx-web/static/css/main.ed03c9dc.css",
+    "main.js": "/ctx-web/static/js/main.14103545.js",
+    "static/media/user.jpg": "/ctx-web/static/media/user.ed3f4cb9d4b48918d668.jpg",
+    "static/media/ctx-logo.jpg": "/ctx-web/static/media/ctx-logo.be14e8f9aab46541142b.jpg",
+    "index.html": "/ctx-web/index.html",
+    "main.ed03c9dc.css.map": "/ctx-web/static/css/main.ed03c9dc.css.map",
+    "main.14103545.js.map": "/ctx-web/static/js/main.14103545.js.map"
   },
   "entrypoints": [
     "static/css/main.ed03c9dc.css",
-    "static/js/main.43f75419.js"
+    "static/js/main.14103545.js"
   ]
 }
