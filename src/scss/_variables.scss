@@ -1,0 +1,34 @@
+$color-background-container: #ffffff;
+$color-background-canvas: #f3f2f0;
+
+$system-gray-60-a20: hsla(0,0%,54.9%,0.2);
+$black-a90: rgba(0,0,0,0.9);
+$black-a60: rgba(0,0,0,0.6);
+
+$spacing-three-x: 1.6rem;
+$color-border-faint: $system-gray-60-a20;
+$system-gray-60-a20: hsla(0,0%,54.9%,0.2);
+$corner-radius-small: 0.4rem;
+$color-text-active: $black-a90;
+
+$cool-gray-20: #edf3f8;
+$voyager-color-background-input-search: $cool-gray-20;
+
+$elavation-lined: 0px 0px 0px 1px hsla(0,0%,54.9%,0.2);
+$color-icon-nav-selected: $black-a90;
+$color-icon-nav-selected-active: $black-a90;
+$color-icon-nav: $black-a60;
+
+$color-text: $black-a90;
+$color-text-low-emphasis: $black-a60;
+
+$scaffold-layout-none-max-width: 576px;
+$scaffold-layout-md-max-width: 720px;
+$scaffold-layout-lg-max-width: 960px;
+$scaffold-layout-xl-max-width: 1128px;
+
+$duration-xfast: 84ms;
+$ease-standard: cubic-bezier(.34,0,.21,1);
+$motion-transition-hover-in: $duration-xfast $ease-standard;
+
+$corner-radius-full: 50%;
