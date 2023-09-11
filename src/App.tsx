@@ -1,22 +1,19 @@
 import React from 'react';
 import './scss/app.scss';
-import Header from "./components/Header";
-import LeftProfile from "./components/LeftProfile";
 import Posts from "./components/Posts";
-import RightBlock from "./components/RightBlock";
+import {Navigate, Route, Routes} from "react-router";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
+import Layout from "./pages/Layout/Layout";
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <div className="content">
-        <div className="content-body">
-          <LeftProfile/>
-          <Posts/>
-          <RightBlock/>
-        </div>
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Navigate to="/feed" replace/>}/>
+        <Route path="feed" element={<Posts/>}/>
+        <Route path="*" element={<NotFoundPage/>}/>
+      </Route>
+    </Routes>
   );
 }
 

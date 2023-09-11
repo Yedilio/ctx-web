@@ -6,7 +6,10 @@ import {BsFillBriefcaseFill, BsFillPeopleFill} from "react-icons/bs";
 import {BiMessageDetail} from "react-icons/bi";
 import {IoMdNotifications} from "react-icons/io";
 import userPhoto from "./../../assets/user.jpg"
+import {Link, NavLink} from "react-router-dom";
 
+// @ts-ignore
+const setActiveLink = ({isActive}) => isActive ? 'global-nav__primary-item-link active' : 'global-nav__primary-item-link';
 
 const Header = () => {
   const [inputActive, setInputActive] = useState(false);
@@ -22,11 +25,11 @@ const Header = () => {
   return (
     <header className="global-nav">
       <div className="global-nav__content">
-        <a href="#">
+        <Link to="/">
           <div className="global-logo">
             <img src={logo} alt=""/>
           </div>
-        </a>
+        </Link>
 
         <div className="global-nav-search">
           <div className={`search-global-typeahead` + (inputActive ? ' search-global-typeahead-focused' : '')}>
@@ -51,34 +54,34 @@ const Header = () => {
         <nav className="global-nav__nav">
           <ul className="global-nav__primary-items">
             <li className="global-nav__primary-item">
-              <a href="" className="global-nav__primary-item-link active">
+              <NavLink to="/feed"  className={setActiveLink}>
                 <AiFillHome/>
                 <span>Main</span>
-              </a>
+              </NavLink>
             </li>
             <li className="global-nav__primary-item">
-              <a href="" className="global-nav__primary-item-link">
+              <NavLink to="/mynetwork"  className={setActiveLink}>
                 <BsFillPeopleFill/>
                 <span>Network</span>
-              </a>
+              </NavLink>
             </li>
             <li className="global-nav__primary-item">
-              <a href="" className="global-nav__primary-item-link">
+              <NavLink to="/jobs"  className={setActiveLink}>
                 <BsFillBriefcaseFill/>
-                <span>Vacancy</span>
-              </a>
+                <span>Jobs</span>
+              </NavLink>
             </li>
             <li className="global-nav__primary-item">
-              <a href="" className="global-nav__primary-item-link">
+              <NavLink to="/messaging"  className={setActiveLink}>
                 <BiMessageDetail/>
-                <span>Messages</span>
-              </a>
+                <span>Messaging</span>
+              </NavLink>
             </li>
             <li className="global-nav__primary-item">
-              <a href="" className="global-nav__primary-item-link">
+              <NavLink to="/notifications"  className={setActiveLink}>
                 <IoMdNotifications/>
                 <span>Notifications</span>
-              </a>
+              </NavLink>
             </li>
             <li className="global-nav__primary-item">
               <button className="global-nav__primary-item-link-btn">

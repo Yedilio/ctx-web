@@ -153,18 +153,22 @@
             color: $color-icon-nav-selected;
           }
 
+          &:after {
+            border-bottom: 2px solid $color-icon-nav-selected;
+            content: "";
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transition: transform .25s ease-in-out;
+            width: 100%;
+          }
+
           &.active {
             color: $color-icon-nav-selected;
 
             &:after {
-              border-bottom: 2px solid $color-icon-nav-selected;
-              content: "";
-              bottom: 0;
-              left: 0;
-              position: absolute;
               transform: scaleX(1);
-              transition: transform .2s ease-in-out;
-              width: 100%;
             }
           }
 
@@ -308,12 +312,20 @@
       &-title {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         color: $color-text;
         font-size: 1.4rem;
+        font-weight: 600;
+
+        &-link, &-link img{
+          display: flex;
+          margin-left: 5px;
+          height: 20px;
+        }
       }
 
       &-items ul {
-        margin-top: 1.6rem;
+        margin-top: 1rem;
         list-style-type: none;
 
         .right-block-item {
@@ -322,6 +334,15 @@
           margin: 1.2rem 0;
           position: relative;
 
+          a {
+            text-align: left;
+            color: $color-icon-nav;
+
+            &:hover {
+              color: $color-icon-nav-selected;
+            }
+          }
+
           &-body {
             display: flex;
             flex-direction: column;
@@ -329,6 +350,10 @@
             & span:last-child {
               color: $color-text-low-emphasis;
               font-size: .8rem;
+
+              &:hover {
+                color: $color-icon-nav-selected;
+              }
             }
           }
         }
@@ -467,6 +492,12 @@
 
   95% {
     opacity: .05
+  }
+}
+
+@media screen and (max-width: 576px){
+  .left-profile, .posts .posts-item, .right-block {
+    border-radius: 0!important;
   }
 }
 
