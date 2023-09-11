@@ -559,12 +559,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .content-body {
-    width: $scaffold-layout-xl-max-width;
-  }
-}
-
 @media screen and (min-width: 1025px) {
   .global-nav .global-nav__content .global-nav-search {
     .global-nav-typeahead {
@@ -576,5 +570,12 @@
     .search-global-typeahead-btn {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-body, .global-nav .global-nav__content {
+    width: $scaffold-layout-xl-max-width;
+    flex: none;
   }
 }
