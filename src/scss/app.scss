@@ -234,10 +234,9 @@
 
     .left-profile {
       background-color: white;
-      //width: 225px;
-      height: 400px;
+      height: fit-content;
       border-radius: 8px;
-      box-shadow: 0px 0px 0px 1px hsla(0,0%,54.9%,0.2);
+      box-shadow: 0 0 0 1px hsla(0,0%,54.9%,0.2);
 
       .identity-profile {
         padding: 1.2rem 1.2rem 1.6rem;

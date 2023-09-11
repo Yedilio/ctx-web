@@ -56,13 +56,13 @@ const Header = () => {
             <li className="global-nav__primary-item">
               <NavLink to="/feed"  className={setActiveLink}>
                 <AiFillHome/>
-                <span>Main</span>
+                <span>Home</span>
               </NavLink>
             </li>
             <li className="global-nav__primary-item">
               <NavLink to="/mynetwork"  className={setActiveLink}>
                 <BsFillPeopleFill/>
-                <span>Network</span>
+                <span>My Network</span>
               </NavLink>
             </li>
             <li className="global-nav__primary-item">

@@ -11,7 +11,9 @@ const Posts = () => {
       .then((json: any) => {
         setPosts([json[0], json[3], json[2]] as any);
         setLoading(false);
-      })
+      });
+
+    document.title = 'Feed | Ctx Web';
   }, []);
 
   return (
