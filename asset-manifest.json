@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ctx-web/static/css/main.ed03c9dc.css",
-    "main.js": "/ctx-web/static/js/main.14103545.js",
+    "main.css": "/ctx-web/static/css/main.40bfafa1.css",
+    "main.js": "/ctx-web/static/js/main.dc68b926.js",
     "static/media/user.jpg": "/ctx-web/static/media/user.ed3f4cb9d4b48918d668.jpg",
+    "static/media/citix-logo.svg": "/ctx-web/static/media/citix-logo.8100b99c4165ae43bd1f5d77295005cd.svg",
     "static/media/ctx-logo.jpg": "/ctx-web/static/media/ctx-logo.be14e8f9aab46541142b.jpg",
     "index.html": "/ctx-web/index.html",
-    "main.ed03c9dc.css.map": "/ctx-web/static/css/main.ed03c9dc.css.map",
-    "main.14103545.js.map": "/ctx-web/static/js/main.14103545.js.map"
+    "main.40bfafa1.css.map": "/ctx-web/static/css/main.40bfafa1.css.map",
+    "main.dc68b926.js.map": "/ctx-web/static/js/main.dc68b926.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed03c9dc.css",
-    "static/js/main.14103545.js"
+    "static/css/main.40bfafa1.css",
+    "static/js/main.dc68b926.js"
   ]
 }
